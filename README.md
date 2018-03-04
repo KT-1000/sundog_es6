@@ -21,7 +21,7 @@ For example, if you cd into images directory, you can build and run a docker con
 
 <code>docker build -t elasticsearch .</code>
 
-<code>docker run --rm -p 9200:9200 elasticsearch</code>
+<code>docker run --rm -tid -p 9200:9200 elasticsearch</code>
 
 ## <a name="technologiesused"></a>Technologies Used
 - [Elasticsearch](https://www.elastic.co/products/elasticsearch)
