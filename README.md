@@ -1,8 +1,8 @@
 # What is this?
-A way for[Katie Simmons](https://github.com/katie-simmons)and[Nate Rock](https://github.com/rockhowse)to learn 
-the elastic stack via Frank Kane's Udemy course[Elasticsearch 6 and the Elastic Stack: In Depth and Hands On](https://www.udemy.com/elasticsearch-6-and-elastic-stack-in-depth-and-hands-on)
+A way for [Katie Simmons](https://github.com/katie-simmons) and [Nate Rock](https://github.com/rockhowse) to learn 
+the elastic stack via Frank Kane's Udemy course [Elasticsearch 6 and the Elastic Stack: In Depth and Hands On](https://www.udemy.com/elasticsearch-6-and-elastic-stack-in-depth-and-hands-on).
 
-Dockerization based on elastic.co's excellent[elasticsearch docker tutorial](https://www.elastic.co/blog/how-to-make-a-dockerfile-for-elasticsearch)
+Dockerization based on elastic.co's excellent [elasticsearch docker tutorial](https://www.elastic.co/blog/how-to-make-a-dockerfile-for-elasticsearch).
 
 # How do I use it?
 If you're taking the same course and want a self-contained setup to do all the coursework, first pop open a terminal and
