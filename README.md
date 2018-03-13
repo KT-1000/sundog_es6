@@ -12,20 +12,24 @@ enter the following commands to get a local copy of this repo and enter it:
 
 <code>cd sundog_es6</code>
 
-To complete the exercise(s) in each section, it is necessary to have an environment with the appropriate technologies.
+To complete the exercises in each section, it is necessary to have an environment with the appropriate technologies.
 While the course instructions specify creating an Ubuntu VM using VirtualBox and a downloaded ISO, we'll be using Docker 
 containers instead. We'll still need VirtualBox though, so download the appropriate version for your system here:
 
 [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
 
 Once downloaded, install VirtualBox. It will be used by docker-machine to create a place for the docker containers 
-we'll need to do perform coursework to sit. Each part of the elastic stack will be in its own docker container. 
-For example, if you cd into the *docker_image* directory, you can build and run a docker container for elasticsearch by 
-these commands:
+we'll need to do perform coursework to sit. 
+
+Each part of the elastic stack will be in its own docker container. For example, if you cd into the *docker_image* 
+directory, you can build and run a docker container for elasticsearch via these commands:
 
 <code>docker build -t elasticsearch .</code>
 
 <code>docker run --rm -tid -p 9200:9200 elasticsearch</code>
+
+Now you have a docker container named 'elasticsearch' running elasticsearch6, which can be used for future exercises.
+
 
 ## <a name="technologiesused"></a>Technologies Used
 - [Elasticsearch](https://www.elastic.co/products/elasticsearch)
@@ -33,12 +37,21 @@ these commands:
 - [Kibana](https://www.elastic.co/products/kibana)
 - [Docker](https://www.docker.com/)
 
-## <a name="features"></a>Features
-
-*Current*
-
+## <a name="features"></a>TODO
 - [X] Dockerfile including elasticsearch 6 (and its JDK dependency)
-
-*Future*
-
 - [ ] Dockerfiles containing Kibana and Logstash
+- [ ] Docker-compose
+- [ ] Can connect to docker image and run setup_shakespeare script successfully 
+
+# Coursework
+## Section 1
+To try out the docker container and get a taste of elasticsearch6, let's run a script in the docker container to
+install the collected works of William Shakespeare and query for the phrase "to be or not to be":
+
+<code>docker exec elasticsearch ./section-1/setup_shakespeare.sh</code>
+
+You should see the following JSON returned in your terminal:
+
+<code>
+{}
+</code>
